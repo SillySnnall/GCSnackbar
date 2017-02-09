@@ -162,6 +162,14 @@ public class GCSnackbar {
         return Snackbar.make(activity.findViewById(android.R.id.content), "", duration);
     }
 
+
+    /**
+     * 普通提示
+     * @param activity
+     * @param messageText
+     * @param duration
+     * @return
+     */
     public static Snackbar infoSnackbar(Activity activity, CharSequence messageText, int duration) {
         Snackbar snackbar = newSnackbar(activity, duration);
         setSnackbarText(snackbar, messageText);
@@ -170,6 +178,13 @@ public class GCSnackbar {
         return snackbar;
     }
 
+    /**
+     * 警告提示
+     * @param activity
+     * @param messageText
+     * @param duration
+     * @return
+     */
     public static Snackbar warnSnackbar(Activity activity, CharSequence messageText, int duration) {
         Snackbar snackbar = newSnackbar(activity, duration);
         setSnackbarText(snackbar, messageText);
@@ -178,6 +193,13 @@ public class GCSnackbar {
         return snackbar;
     }
 
+    /**
+     * 错误提示
+     * @param activity
+     * @param messageText
+     * @param duration
+     * @return
+     */
     public static Snackbar errorSnackbar(Activity activity, CharSequence messageText, int duration) {
         Snackbar snackbar = newSnackbar(activity, duration);
         setSnackbarText(snackbar, messageText);
