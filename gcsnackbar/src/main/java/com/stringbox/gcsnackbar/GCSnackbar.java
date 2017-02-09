@@ -214,10 +214,15 @@ public class GCSnackbar {
         }
     }
 
+    /**
+     * 设置Snackbar图标
+     * @param activity
+     * @param snackbar
+     * @param resId
+     */
     private static void setIcon(Activity activity, Snackbar snackbar, int resId){
         View snackbarview = snackbar.getView();
         Snackbar.SnackbarLayout snackbarLayout = (Snackbar.SnackbarLayout) snackbarview;
-//        View addView = LayoutInflater.from(snackbarview.getContext()).inflate(R.layout.snackbar_layout, null);
         ImageView imageView = new ImageView(activity);
         imageView.setImageResource(resId);
         LinearLayout.LayoutParams p = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
